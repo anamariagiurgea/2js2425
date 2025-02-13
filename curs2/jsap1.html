@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+
+<body>
+    <h3>Scriptul utilizeaza instructiunea switch si afiseaza ziua curenta</h3>
+    <hr>
+    <script>
+        var d = new Date();
+        theDay = d.getDay();
+        switch (theDay) {
+            case 1: document.write("Luni"); break;
+            case 2: document.write("Marti"); break;
+            case 3: document.write("Miercuri"); break;
+            case 4: document.write("Joi"); break;
+            case 5: document.write("Vineri"); break;
+            case 6: document.write("Sambata"); break;
+            case 7: document.write("Duminica"); break;
+            default: document.write("Saptamana are doar 7 zile!!"); break;
+        }
+
+    </script>
+</body>
+
+</html>

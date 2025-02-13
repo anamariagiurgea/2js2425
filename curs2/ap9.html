@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While sa se afiseze nr impare ppana la un nr n citit de la tastatura</title>
+</head>
+
+<body>
+    <script>
+        let n;
+        let i = 0;
+
+        n = eval(prompt('Va rugam introduceti un numar:', 2));
+        while (i < n) {
+            if (i % 2 != 0){
+              //  documet.write("<p>Numar impar</p>" + i);//
+                document.write(`<p> Numar impar: ${i} </p>`); //interpolare e mai recomandata//
+        
+            }
+            i++;
+        }
+
+
+    </script>
+</body>
+
+</html>

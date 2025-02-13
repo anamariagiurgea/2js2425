@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <Pre>
+        <P>
+            Sa se interschimbe 2 variabile;
+            a=5 b=7
+            date de iesire a=5 b=7
+            sa scriem un program care ordoneaza 4 numere
+            a=5 b=7 c=2 d=6
+            date de iesire 2567
+        </P>
+    </Pre>
+    <script>
+        //declararea numerelor
+        let a = 5;
+        let b = 7;
+        let c = 2;
+        let d = 6;
+
+        //Algorim de interschimbare pt ordine crescatoare
+        if (a > b) { temp = a; a = b; b = temp; }
+        if (b > c) { temp = b; b = c; c = temp; }
+        if (c > d) { temp = c; c = d; d = temp; }
+
+        //Dupa prima trecere, verificam din nou pt toate perechile
+        if (a > b) { temp = a; a = b; b = temp; }
+        if (b > c) { temp = b; b = c; c = temp; }
+        if (a > b) { temp = a; a = b; b = temp; }
+
+        //Rezultatul
+        console.log(`Numerele sunt ordonate: ${a},${b},${c},${d}`)
+        document.write(`Numerele sunt ordonate: ${a},${b},${c},${d}`)
+
+
+    </script>
+</body>
+
+</html>
