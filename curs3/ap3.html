@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //diferenta intre cele 2 tipuri de date prim valoare si prin referinta
+        //prim valoare numarul a are valoarea 20, care va fi inlocuite cu 30; prim valoare
+        let a = 20;
+        let b;
+        b = a;
+        a = 30;
+
+        console.log(a);
+        console.log(b);
+// sirul de caractere popescu va fi inlocuit de ionescu
+// ambele obiecte si student 1 si student 2 vor avea prop transmise prin referinta, prin atribuire directa pe aceeasi adresa de memorie
+
+        let student = {
+            nume:"Popescru",
+            prenume: Dan,
+            grupa: js,
+        }
+        let student2 = student;
+        sudent2.nume="ionescu"
+        console.log(student);
+        console.log(student2);
+    </script>
+</body>
+
+</html>

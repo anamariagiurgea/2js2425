@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=script, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //pentru ca functia sa fie activa vom apela functia prin argumente
+        //daca functia are paramatrii nume_functie(argument1,argumet...)
+        //daca functia nu are parametrii vom fol nume_functie();
+
+        // pt refolsire de cod in mai multe locuri in proiect
+        //pt izolare instructructiuni- le execut cand doresc unde am nevoie; nu cand se incarca pagina
+        //
+
+
+        function salut() {
+            document.write("Bine ai venit");
+
+        }
+        salut();
+
+        function suma(a, b=100) {
+            console.log( `Suma este dintre ${a} si ${b} este ${a + b}`);
+        }
+
+        suma(10, 20);
+        suma(35, 65);
+        suma(); //pt be sau a definit in function, va genera NaN; 
+        //parametrii care au valoare default ar trebui sa fie pe ult pozitii
+        //parametrii obligatorii sa fie pe prima pozitie
+    </script>
+</body>
+
+</html>
