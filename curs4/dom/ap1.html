@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementById</title>
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body>
+    <h2>Prima mea pagina - Faceti o functie care identifica un element html pe baza de id.Scrie un msj in acel element
+    </h2>
+    <p id="myid"></p>
+    <p id="myid2"></p>
+
+    <script>
+        // este foarte important sa efectuam navigarea dupa introdurecerea elementelor html
+        var id = document.getElementById('myid');
+        salut(id);
+     // salut(id); ->A doua oara nu va apela functia; de regula se pune in paragraf 
+     // un continut default in caz ca js nu functioneaza
+     
+        function salut(id) {
+            id.innerHTML = 'Aceasta e un mesaj scris din JavaScript!';
+        }
+      //pt get myid2 va aparea un al doilea paragraf, si nu este acelasi lucru cu dublarea
+      //continutului in acelasi paragraf in function vezi mai sus var id 1 salut(id)
+      var id2=document.getElementById('myid2');
+       salut(id2);
+      
+
+
+        // vezi jsap9.thml
+    </script>
+
+
+</body>
+
+</html>

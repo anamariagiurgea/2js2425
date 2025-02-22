@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #demo {
+        width: 500px;
+        height: 500px;
+        margin:30px auto;
+
+    
+    }
+</style>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        //faceti o functie hexacolor care genereaza random un cod de culoare hexazecimal, folosind 
+        //math.floor() Math.random()
+
+        //Mathfloor returneaza valoarea intreaga a unui numar rotunjind nr in jos. Mathfloor(1.6)=1
+        //Math.random returneaza o valoare intr [0 si1)
+
+        // const hexaColor=()=>{
+        function hexaColor() {
+            const str = '0123456789abcdef';
+            let hexa = '#';
+            let index;
+            for (let i = 0; i < 6; i++) {
+                index = Math.floor(Math.random() * str.length); //genereaza nr de la 0 la 15
+                hexa += str[index];
+            }
+            return hexa;
+        }
+
+        let myDiv=document.getElementById('demo');
+        myDiv.style.backgroundColor='green';
+        let myColor=hexaColor();
+        myDiv.style.backgroundColor=myColor;
+        console.log(hexaColor());
+        
+        
+    </script>
+</body>
+
+</html>

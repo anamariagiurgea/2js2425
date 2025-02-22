@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //scrieti yn algoritm care sa sorteze numerle un array
+        //Date intrare:[5,2,9,1,5,6];<br>
+        //Date iesire:[1,2,5,5,6,9];<br>
+
+        let myArr = [5, 2, 9, 1, 5, 6, 12, 22];
+        console.log(myArr.sort((a, b) => a - b)) //ord crescatoare
+        //sortarea nu va fi eficienta in cazul numerelor, de aceea vom folosi arrow
+        // pt ca dupa 1 va veni 11,12 in sortare
+
+        console.log(myArr.sort((a, b) => b - a)) //ord descrescatoare
+
+
+
+        // var 2  algoritumul Bubble Sort
+        var myArray = [5, 2, 9, 1, 5, 6, 12, 22];
+        var len = myArray.length;
+        for (var i = 0; j < len - 1; i++) {
+            for (var j = 0; j < len - 1; j++) {
+                if (myArray[j] > myArray[j + 1]) {      ////schimba elementele daca sunt in ordine gresita
+                    var temp = myArray[j];
+                    myArray[j] = myArray[j + 1];
+                    myArray[j + 1] = temp;
+                }
+            }
+        }
+        console.log(myArray);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>//8 ce afiseaza codul?
+
+        const person1 = {
+            firstName: 'Jon',
+            lastName: 'Doe',
+            age: 46
+        };
+
+        //Ghilimelele de la numele proprietatilor sunt optionale si de regula nu se pun
+
+
+        const person2 = {
+            'firstName': 'Jon',
+            'lastName': 'Doe',
+            'age': 46
+
+        };
+        person2.age=58;//   structura este constanta, valorile se pot schimba
+        person2.job='Cantaret';
+        
+        const newPerson = person1;
+        console.log(newPerson == person1);//  true- obiectele sunt egale, se copiaza prin referinta
+        console.log(person2 == person1); //false deoarece se creeaza 2 obiecte diferite pe 2 zone de memorie diferite
+        console.log(newPerson.length); //nu este array sa aiba proprietatea lungime. este de tip  obiect
+        console.log(person2); //structura initiala este constanta, valorile se pot schimba
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //ap 5 - ce afiseaza codul? 1 instructiunr -initializare, 2 conditie care e vida, 
+        // 3 incrementarea care nu incremneteaza, prin urmare 
+        // nu se initializeaza intrand intr-o bucla infinita, fara erori 
+
+        // for(;;){
+        //     console.log("Hello");
+        // }
+
+        //6  - ce afiseseaza codul?
+        for (i = 0, j = 10, u = 25; i < 20 && j < 30 && u > 15; i += 2, j += 4, u--) {
+            console.log("i:" + i + "j:" + j + "u:" + u);
+        }
+        //sintaxa de for este respectata; instructiuni deinitializare in acest caz 3;
+        // comparatia i<20 && j<30 && u>15 executa deoarece instr. de initializare sunt true
+    </script>
+</body>
+
+</html>
