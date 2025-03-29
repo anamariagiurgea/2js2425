@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+           //             Este necesar să se creeze un
+        //  program JavaScript care să calculeze volumul cilindrului.
+      
+        //Varianta 1
+      
+        let r;
+        let h;
+       
+        r = +window.prompt('Va rugam sa introduceti un numar - raza', 0);
+        h = +window.prompt('Va rugam sa introduceti un numar - inaltime', 0);
+        var vol= (Math.PI.toFixed(2) * (r ** 2) * h);  
+        //const volum = ((Math.PI * Math.pow(r, 2) * h)).toFixed(2);
+        document.write("Raza introdusa este:" + r + '<br>');
+        document.write("Inaltimea introdusa este:" + h + '<br>');          
+        document.write(`Volumul cilindrului este:${vol} cmc <br>`);
+        // document.write(`Volumul cilindrului este:${volum} cmc <br>`);  
+
+
+
+
+
+        // Varianta 2
+        
+               function calculeazaVolum() {
+            let raza = document.getElementById('raza').value;
+            let inaltime = document.getElementById('inaltime').value;
+            // raza si inaltimea au valori pozitive, iar nu negative
+            raza = parseFloat(raza)
+            inaltime =parseFloat(inaltime);
+            if (isNaN(raza) || isNaN(inaltime) || raza <= 0 || inaltime <= 0) {
+                document.getElementById('rezultat').textContent = 'Doar valori pozitive!';
+                return;
+            }
+            let volum = Math.PI * Math.pow(raza, 2) * inaltime;
+
+            document.getElementById('rezultat').textContent=volum.toFixed(2)+'cmc';
+           
+        }
+    
+    </script>
+
+    <div class='user'>
+        <h2>Calculator volum cilindru</h2>
+        <p>Contanta PI=3.14</p>
+        <br><b>Inaltime (h) este:</b>
+        <input type="number" id="inaltime" value="0" />
+        <br><b>Raza (r) este:</b>
+        <input type="number" id="raza" value="0" />
+        <button onclick="calculeazaVolum()">Calculeaza:</button>
+        <p> <b>Volumul cilindrului este:</b> <span id="rezultat"></span></p>
+    </div>
+</body>
+
+</html>

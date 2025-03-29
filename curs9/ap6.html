@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // try un bloc cod ce trebuie executat/rulat
+       //catch un bloc cod pt a gestiona orice eroare
+       //finally un bloc de cod de rulat indiferent de rezultat
+       // throw defineste o eroare personalizata.
+        try{
+            let x=10;
+            let y=0;
+            if(y===0){
+                throw " y trebuie sa fie diferit de 0";
+            }
+            else {
+                console.log(x/y);
+            }
+        }catch(error){
+ 
+            console.error(error);
+        }
+        finally{
+            alert('Codul s-a executat');
+        }
+    </script>
+</body>
+</html>
